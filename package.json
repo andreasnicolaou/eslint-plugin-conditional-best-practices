@@ -1,8 +1,9 @@
 {
   "name": "@andreasnicolaou/eslint-plugin-conditional-best-practices",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ESLint plugin to disallow excessive nested conditionals to improve readability",
   "main": "index.js",
+  "private": false,
   "scripts": {
     "test": "mocha lib/tests/*.test.js",
     "format": "prettier --write ."
