@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "ESLint plugin to disallow excessive nested conditionals to improve readability",
   "main": "index.js",
+  "private": false,
   "scripts": {
     "test": "mocha lib/tests/*.test.js",
     "format": "prettier --write ."
