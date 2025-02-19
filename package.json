@@ -1,0 +1,40 @@
+{
+  "name": "@andreasnicolaou/eslint-plugin-conditional-best-practices",
+  "version": "1.0.0",
+  "description": "ESLint plugin to disallow excessive nested conditionals to improve readability",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha lib/tests/*.test.js",
+    "format": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/andreasnicolaou/eslint-plugin-conditional-best-practices"
+  },
+  "author": "Andreas Nicolaou anicolaou66@gmail.com",
+  "license": "MIT",
+  "peerDependencies": {
+    "eslint": ">=6.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.19.0",
+    "@typescript-eslint/parser": ">=5.0.0",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-prettier": "^5.2.2",
+    "prettier": "3.4.2",
+    "babel-eslint": "^10.1.0",
+    "eslint": ">=6.0.0",
+    "mocha": "11.1.0",
+    "typescript": ">=4.0.0"
+  },
+  "keywords": [
+    "eslint",
+    "eslint-plugin",
+    "conditionals",
+    "best practises",
+    "no-excessive-nested-conditionals"
+  ],
+  "dependencies": {
+    "@typescript-eslint/utils": "^8.24.1"
+  }
+}
