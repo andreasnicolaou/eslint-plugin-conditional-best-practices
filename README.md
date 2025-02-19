@@ -1,0 +1,1 @@
+# eslint-plugin-conditional-best-practices
