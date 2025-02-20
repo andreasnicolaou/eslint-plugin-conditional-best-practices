@@ -1,14 +1,15 @@
 # no-duplicated-conditions
 
-
 ## Description
 
 This rule disallows duplicate conditions in if-else chains.
 
 ## Options
+
 This rule does not accept any options.
 
 ## Severity
+
 - Type: Problem
 - Recommended: Yes
 
@@ -17,11 +18,15 @@ This rule does not accept any options.
 ### **Invalid** 👎
 
 ```js
-if (a) {} else if (a) {}
+if (a) {
+} else if (a) {
+}
 ```
 
 ### **Valid** 👍
 
 ```js
-if (a) {} else if (b) {}
+if (a) {
+} else if (b) {
+}
 ```
