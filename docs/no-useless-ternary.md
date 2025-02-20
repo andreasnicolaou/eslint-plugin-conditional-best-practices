@@ -1,14 +1,15 @@
 # no-useless-ternary
 
-
 ## Description
 
-This rule disallows unnecessary ternary expressions. 
+This rule disallows unnecessary ternary expressions.
 
 ## Options
+
 This rule does not accept any options.
 
 ## Severity
+
 - Type: Suggestion
 - Recommended: Yes
 
@@ -27,5 +28,5 @@ const isInactive = condition3 ? false : true;
 ### **Valid** 👍
 
 ```js
-const isEnabled = condition1 ? "yes" : "no";
+const isEnabled = condition1 ? 'yes' : 'no';
 ```

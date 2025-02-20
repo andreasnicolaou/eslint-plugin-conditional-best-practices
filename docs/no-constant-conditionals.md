@@ -1,14 +1,15 @@
 # no-constant-conditionals
 
-
 ## Description
 
 This rule disallows conditionals that always evaluate to true or false.
 
 ## Options
+
 This rule does not accept any options.
 
 ## Severity
+
 - Type: Problem
 - Recommended: Yes
 
@@ -17,15 +18,23 @@ This rule does not accept any options.
 ### **Invalid** 👎
 
 ```js
-if (true) { sayHi(); }
+if (true) {
+    sayHi();
+}
 ```
 
 ```js
-if (false) { sayHi(); }
+if (false) {
+    sayHi();
+}
 ```
 
 ### **Valid** 👍
 
 ```js
-const name = "andreas"; const x = "hello"; if (x === name) { sayHi(); }
+const name = 'andreas';
+const x = 'hello';
+if (x === name) {
+    sayHi();
+}
 ```
