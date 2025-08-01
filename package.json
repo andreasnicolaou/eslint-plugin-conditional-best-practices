@@ -18,15 +18,15 @@
         "eslint": ">=9.32.0"
     },
     "devDependencies": {
-        "@eslint/js": "^9.30.1",
-        "@typescript-eslint/parser": ">=8.37.0",
-        "eslint-config-prettier": "^10.1.5",
-        "eslint-plugin-prettier": "^5.5.1",
-        "prettier": "3.5.3",
+        "@eslint/js": "^9.32.0",
+        "@typescript-eslint/parser": ">=8.38.0",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-prettier": "^5.5.3",
+        "prettier": "3.6.2",
         "babel-eslint": "^10.1.0",
         "eslint": ">=9.32.0",
         "mocha": "11.7.1",
-        "typescript": ">=4.0.0"
+        "typescript": ">=5.8.3"
     },
     "keywords": [
         "eslint",
@@ -36,6 +36,6 @@
         "no-excessive-nested-conditionals"
     ],
     "dependencies": {
-        "@typescript-eslint/utils": "^8.35.1"
+        "@typescript-eslint/utils": "^8.38.0"
     }
 }
