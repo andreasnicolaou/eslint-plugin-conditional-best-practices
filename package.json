@@ -36,6 +36,6 @@
         "no-excessive-nested-conditionals"
     ],
     "dependencies": {
-        "@typescript-eslint/utils": "^8.45.0"
+        "@typescript-eslint/utils": "^8.46.2"
     }
 }
