@@ -1,27 +1,52 @@
-import conditionalBestPractices from '@andreasnicolaou/conditional-best-practices';
+const js = require('@eslint/js');
 
-export default [
+module.exports = [
+    {
+        ignores: ['coverage/**', 'node_modules/**'],
+    },
+    js.configs.recommended,
     {
         files: ['**/*.js'],
         languageOptions: {
+            ecmaVersion: 2020,
+            sourceType: 'script',
             globals: {
-                es2021: 'readonly',
+                module: 'writable',
+                exports: 'writable',
+                require: 'readonly',
+                process: 'readonly',
+                __dirname: 'readonly',
+                __filename: 'readonly',
+                console: 'readonly',
             },
         },
-        plugins: {
-            '@andreasnicolaou/conditional-best-practices': conditionalBestPractices,
-        },
-        extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'plugin:prettier/recommended'],
+        plugins: {},
         rules: {
             'no-console': 'warn',
-            quotes: [2, 'single'],
-            ...conditionalBestPractices.configs.recommended.rules,
+            'no-unused-vars': 'warn',
+            eqeqeq: 'error',
+            quotes: [2, 'single', { avoidEscape: true }],
         },
     },
     {
-        rules: {
-            'no-unused-vars': 'warn',
-            eqeqeq: 'error',
+        files: ['**/*.test.js', '**/*.spec.js'],
+        languageOptions: {
+            ecmaVersion: 2020,
+            sourceType: 'script',
+            globals: {
+                describe: 'readonly',
+                it: 'readonly',
+                before: 'readonly',
+                after: 'readonly',
+                beforeEach: 'readonly',
+                afterEach: 'readonly',
+                module: 'writable',
+                exports: 'writable',
+                require: 'readonly',
+                process: 'readonly',
+                __dirname: 'readonly',
+                console: 'readonly',
+            },
         },
     },
 ];
