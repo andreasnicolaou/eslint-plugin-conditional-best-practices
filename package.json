@@ -31,15 +31,15 @@
     "devDependencies": {
         "@eslint/js": "^10.0.1",
         "@eslint/eslintrc": "^3.3.5",
-        "@typescript-eslint/parser": ">=8.58.0",
+        "@typescript-eslint/parser": ">=8.59.0",
         "eslint-config-prettier": "^10.1.8",
         "eslint-plugin-prettier": "^5.5.5",
         "prettier": "3.8.1",
         "babel-eslint": "^10.1.0",
-        "bundlewatch": "^0.4.1",
-        "eslint": ">=10.1.0",
+        "bundlewatch": "^0.4.2",
+        "eslint": ">=10.2.1",
         "mocha": "11.7.5",
-        "typescript": ">=5.9.3"
+        "typescript": ">=6.0.3"
     },
     "keywords": [
         "eslint",
@@ -49,6 +49,6 @@
         "no-excessive-nested-conditionals"
     ],
     "dependencies": {
-        "@typescript-eslint/utils": "^8.58.0"
+        "@typescript-eslint/utils": "^8.59.0"
     }
 }
