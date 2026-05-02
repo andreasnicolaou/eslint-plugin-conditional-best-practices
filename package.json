@@ -31,7 +31,7 @@
     "devDependencies": {
         "@eslint/js": "^10.0.1",
         "@eslint/eslintrc": "^3.3.5",
-        "@typescript-eslint/parser": ">=8.59.0",
+        "@typescript-eslint/parser": ">=8.59.1",
         "eslint-config-prettier": "^10.1.8",
         "eslint-plugin-prettier": "^5.5.5",
         "prettier": "3.8.1",
