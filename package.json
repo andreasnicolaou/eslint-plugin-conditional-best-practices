@@ -34,7 +34,7 @@
         "@typescript-eslint/parser": ">=8.59.0",
         "eslint-config-prettier": "^10.1.8",
         "eslint-plugin-prettier": "^5.5.5",
-        "prettier": "3.8.1",
+        "prettier": "3.8.3",
         "babel-eslint": "^10.1.0",
         "bundlewatch": "^0.4.2",
         "eslint": ">=10.2.1",
