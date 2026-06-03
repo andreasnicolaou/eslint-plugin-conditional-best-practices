@@ -38,7 +38,7 @@
         "babel-eslint": "^10.1.0",
         "bundlewatch": "^0.4.2",
         "eslint": ">=10.4.0",
-        "mocha": "11.7.5",
+        "mocha": "11.7.6",
         "typescript": ">=6.0.3"
     },
     "keywords": [
