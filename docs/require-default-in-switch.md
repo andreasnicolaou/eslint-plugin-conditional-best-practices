@@ -2,7 +2,9 @@
 
 ## Description
 
-This rule ensures that switch statements include a default case and/or its not empty.
+This rule ensures that `switch` statements include a `default` case and that the `default` case is not empty.
+
+When the `default` case is missing, the rule offers an editor **suggestion** to insert one (`default: break;`). Suggestions are applied manually from your editor and are not run by `eslint --fix`.
 
 ## Options
 
@@ -12,6 +14,7 @@ This rule does not accept any options.
 
 - Type: Suggestion
 - Recommended: Yes
+- Has suggestions: Yes
 
 ## Examples
 

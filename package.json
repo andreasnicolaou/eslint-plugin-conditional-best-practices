@@ -1,24 +1,39 @@
 {
     "name": "@andreasnicolaou/eslint-plugin-conditional-best-practices",
-    "version": "1.2.0",
-    "description": "ESLint plugin to disallow excessive nested conditionals to improve readability",
+    "version": "2.0.0",
+    "description": "ESLint plugin with opinionated rules for cleaner, safer conditionals: limit nesting, prefer early returns, catch duplicate/constant conditions, and more.",
     "main": "index.js",
+    "type": "commonjs",
     "private": false,
     "scripts": {
         "test": "mocha lib/tests/*.test.js",
         "lint": "eslint .",
         "lint:fix": "eslint . --fix",
         "format": "prettier --write .",
-        "test:bundle": "npx bundlewatch"
+        "test:bundle": "npx bundlewatch",
+        "prepublishOnly": "npm run lint && npm test"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/andreasnicolaou/eslint-plugin-conditional-best-practices"
+        "url": "git+https://github.com/andreasnicolaou/eslint-plugin-conditional-best-practices.git"
+    },
+    "homepage": "https://github.com/andreasnicolaou/eslint-plugin-conditional-best-practices#readme",
+    "bugs": {
+        "url": "https://github.com/andreasnicolaou/eslint-plugin-conditional-best-practices/issues"
     },
     "author": "Andreas Nicolaou anicolaou66@gmail.com",
     "license": "MIT",
+    "engines": {
+        "node": ">=18"
+    },
+    "files": [
+        "index.js",
+        "lib/rules",
+        "README.md",
+        "LICENSE"
+    ],
     "peerDependencies": {
-        "eslint": ">=9.39.0"
+        "eslint": ">=8"
     },
     "bundlewatch": {
         "files": [
@@ -43,12 +58,19 @@
     },
     "keywords": [
         "eslint",
+        "eslintplugin",
         "eslint-plugin",
+        "eslint-plugin-conditional-best-practices",
+        "flat-config",
         "conditionals",
-        "best practises",
-        "no-excessive-nested-conditionals"
-    ],
-    "dependencies": {
-        "@typescript-eslint/utils": "^8.61.1"
-    }
+        "best-practices",
+        "code-quality",
+        "lint",
+        "ternary",
+        "no-nested-ternary",
+        "early-return",
+        "switch-default",
+        "no-excessive-nested-conditionals",
+        "no-eval"
+    ]
 }

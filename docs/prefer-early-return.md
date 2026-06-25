@@ -2,7 +2,7 @@
 
 ## Description
 
-This rule encourages the use of early returns instead of deeply nested if-else blocks.
+This rule encourages the use of early returns instead of deeply nested if-else blocks. It flags an `else` branch whose only statement is a `return`, whether written as a block (`else { return; }`) or inline (`else return;`).
 
 ## Options
 
@@ -24,6 +24,13 @@ function check(x) {
     } else {
         return;
     }
+}
+```
+
+```js
+function check(x) {
+    if (x) helloWorld();
+    else return;
 }
 ```
 
