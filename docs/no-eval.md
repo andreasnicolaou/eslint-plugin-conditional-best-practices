@@ -7,7 +7,8 @@ Disallow use of `eval()` and the `Function` constructor due to security and perf
 The rule detects:
 
 - Direct calls: `eval(...)`
-- Indirect/aliased eval: `const run = eval;`
+- Indirect calls: `(0, eval)(...)`, `eval.call(...)`, `eval.apply(...)`
+- Aliased eval: `const run = eval;`
 - Global access: `window.eval(...)`, `globalThis['eval'](...)`, `self.eval`, `global.eval`
 - The implied eval of `new Function(...)`
 
