@@ -2,7 +2,12 @@
 
 ## Description
 
-This rule disallows unnecessary ternary expressions.
+This rule disallows unnecessary ternary expressions where both branches are boolean literals, such as `cond ? true : false`.
+
+This rule is **autofixable** with `eslint --fix`:
+
+- `cond ? true : false` → `cond`
+- `cond ? false : true` → `!cond`
 
 ## Options
 
@@ -12,6 +17,7 @@ This rule does not accept any options.
 
 - Type: Suggestion
 - Recommended: Yes
+- Fixable: Yes (code)
 
 ## Examples
 
