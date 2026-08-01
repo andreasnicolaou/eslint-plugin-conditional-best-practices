@@ -54,7 +54,7 @@
         "bundlewatch": "^0.4.2",
         "eslint": ">=10.6.0",
         "mocha": "11.7.6",
-        "typescript": ">=6.0.3"
+        "typescript": ">=7.0.2"
     },
     "keywords": [
         "eslint",
